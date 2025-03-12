@@ -36,6 +36,6 @@
 
     </main>
     <footer>
-        <p>Desenvolvido por Rodrigo Ribeiro da silva &copy; - 2021</p>
+        <p>Desenvolvido por Rodrigo Ribeiro da silva &copy; - 2025</p>
 </body>
 </html>
