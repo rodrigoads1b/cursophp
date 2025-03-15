@@ -13,20 +13,42 @@
     <main>
         <h1>Conversor de moedas</h1> 
         <form action="conversor.php" method="get">
-            <label for="valor">Valor em R$:</label>
-            <input type="number" name="valor" id="valor" required>
-            <input type="submit" value="Enviar">
-            
-            <div>
-                <input type="radio" name="moeda" id="dolar" value="dolar" required checked>
-                <label for="dolar">Dólar</label> 
-                
-                <input type="radio" name="moeda" id="euro" value="euro" required>
-                <label for="euro">Euro</label>
-                
-                <input type="radio" name="moeda" id="libra" value="libra" required>
-                <label for="libra">Libra</label>
-            </div>
+            <table>
+                <tr>
+                    <td><label for="valor">Valor em R$:</label></td>
+                    <td><input type="number" name="valor" id="valor" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+                            <legend>Usar API</legend>
+                            <input type="radio" name="api" id="sim" value="sim" required>
+                            <label for="sim">Sim</label>
+                            
+                            <input type="radio" name="api" id="nao" value="nao" required checked>
+                            <label for="nao">Não</label>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+                            <legend>Selecione uma Moeda</legend>
+                            <input type="radio" name="moeda" id="dolar" value="dolar" required checked>
+                            <label for="dolar">Dólar</label> 
+                            
+                            <input type="radio" name="moeda" id="euro" value="euro" required>
+                            <label for="euro">Euro</label>
+                            
+                            <input type="radio" name="moeda" id="libra" value="libra" required>
+                            <label for="libra">Libra</label>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
         </form>       
     </main>    
 </body>
