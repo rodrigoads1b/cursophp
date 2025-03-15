@@ -1,0 +1,34 @@
+/**
+ * Conversor de moedas
+ *
+ * Este script converte valores de moedas estrangeiras para reais (BRL).
+ * Ele pode utilizar taxas de câmbio fixas ou consultar uma API para obter as taxas de câmbio atuais.
+ *
+ * Parâmetros de entrada via GET:
+ * - api: Define se a conversão deve usar taxas fixas ("nao") ou consultar a API ("sim").
+ * - valor: O valor a ser convertido.
+ * - moeda: A moeda a ser convertida (dolar, euro, libra).
+ *
+ * Constantes:
+ * - TAXA_DOLAR: Taxa de câmbio fixa para Dólar.
+ * - TAXA_EURO: Taxa de câmbio fixa para Euro.
+ * - TAXA_LIBRA: Taxa de câmbio fixa para Libra.
+ * - MOEDA_DOLAR: Código da moeda Dólar na API.
+ * - MOEDA_EURO: Código da moeda Euro na API.
+ * - MOEDA_LIBRA: Código da moeda Libra na API.
+ *
+ * Dependências:
+ * - cURL: Biblioteca para realizar requisições HTTP.
+ *
+ * Saída:
+ * - Exibe o valor convertido em reais (BRL).
+ *
+ * Exemplo de uso:
+ * - /conversor.php?api=nao&valor=100&moeda=dolar
+ * - /conversor.php?api=sim&valor=100&moeda=euro
+ *
+ * @package ConversorDeMoedas
+ * @version 1.0
+ * @author Rodrigo Ribeiro
+ * @copyright 2025 Rodrigo Ribeiro
+ */
