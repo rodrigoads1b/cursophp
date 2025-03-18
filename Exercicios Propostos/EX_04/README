@@ -1,0 +1,15 @@
+/**
+ * Este script recebe um número real via uma solicitação GET e exibe suas partes inteira e fracionada.
+ *
+ * O script realiza os seguintes passos:
+ * 1. Recupera o número do parâmetro de solicitação GET 'num'.
+ * 2. Calcula a parte inteira do número usando a função intval().
+ * 3. Calcula a parte fracionada subtraindo a parte inteira do número original.
+ * 4. Exibe o número original, sua parte inteira e sua parte fracionada formatada para três casas decimais.
+ *
+ * @package Analisador
+ * @version 1.0
+ * @autor Rodrigo Ribeiro
+ * @copyright 2025 Rodrigo Ribeiro
+ * @license MIT
+ */
