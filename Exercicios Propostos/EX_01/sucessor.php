@@ -16,6 +16,7 @@
         $resultado = "";    
             $numero = $_GET['numero'];
             $operacao = $_GET['operacao'];
+            
             if($operacao == "sucessor"){
                 $sucessor = $numero + 1; 
                 $resultado = "O sucessor de " . $numero . " é " . $sucessor . "<br>";

@@ -12,16 +12,19 @@
         <h1>Bem-vindo ao Analisador</h1>
     </header>
     <main>
+        <h2>Analisador de numero real</h2>
         <?php
             $valor_digitado = $_GET['num'];
 
             $parte_inteira = intval($valor_digitado);
             $parte_fracionada = $valor_digitado - $parte_inteira;
-
         ?>
-        <p>O número digitado foi: <?php echo $valor_digitado; ?></p>
-        <p>A parte inteira do número digitado foi: <?php echo $parte_inteira; ?></p>
-        <p>A parte fracionada do número digitado foi: <?php echo number_format($parte_fracionada, 3); ?></p>      
+        <ul>
+            <li>O número digitado foi: <?php echo $valor_digitado; ?></li>
+            <li>A parte inteira do número digitado foi: <?php echo $parte_inteira; ?></li>
+            <li>A parte fracionada do número digitado foi: <?php echo number_format($parte_fracionada, 3); ?></li>
+        </ul>
+        <button onclick="history.back()">Voltar para pagína anterior</button>      
     </main>  
     
     <footer>

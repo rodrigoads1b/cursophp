@@ -53,7 +53,7 @@
                     default:
                         $moeda = 0;
                         break;
-                }
+                }   
                 
                 $api_url = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.'.$moeda.'/dados?formato=json&dataInicial=12/03/2025&dataFinal=12/03/2025';
 
